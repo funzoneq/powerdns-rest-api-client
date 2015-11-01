@@ -19,7 +19,7 @@ end
 
 # Test Kitchen on Jenkins is still TODO
 desc 'Run all tests on CI platform'
-task ci: %w(style unit)
+task test: %w(style unit)
 
 # The default rake task should just run it all
 desc 'Run all tests'
