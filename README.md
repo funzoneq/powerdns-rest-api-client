@@ -23,7 +23,7 @@ $ gem install powerdns_rest_api_client
 
 ## Usage
 
-Enable the (REST API on PowerDNS)[https://doc.powerdns.com/md/httpapi/api_spec/] with this snippet:
+Enable the [REST API on PowerDNS](https://doc.powerdns.com/md/httpapi/api_spec/) with this snippet:
 
 ```
 webserver-address=127.0.0.1
