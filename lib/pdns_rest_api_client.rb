@@ -39,10 +39,18 @@ class PdnsRestApiClient
     self.class.get("/servers/#{server_id}/zones/#{zone_id}")
   end
 
+  def modify_zone(zone, server_id = 'localhost')
+    self.class.post("/servers/#{server_id}/zones", body: zone.to_json)
+  end
+
   def create_zone(domain, nsServers = [], kind = 'Native', masters = [], server_id = 'localhost')
     zone = { name: domain, kind: kind, masters: masters, nameservers: nsServers }
 
-    self.class.post("/servers/#{server_id}/zones", body: zone.to_json)
+    modify_zone(zone, server_id)
+  end
+
+  def delete_zone(zone_id, server_id = 'localhost')
+    self.class.delete("/servers/#{server_id}/zones/#{zone_id}")
   end
 
   def notify(zone_id, server_id = 'localhost')
