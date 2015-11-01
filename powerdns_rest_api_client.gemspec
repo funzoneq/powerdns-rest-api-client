@@ -10,8 +10,10 @@ Gem::Specification.new do |s|
 
   s.files         = `git ls-files`.split("\n")
 
-  s.add_runtime_dependency 'httparty', '~> 0'
+  s.add_runtime_dependency 'httparty', '~> 0.8.3'
 
-  s.add_development_dependency 'rspec', '~> 0'
-  s.add_development_dependency 'webmock', '~> 0'
+  s.add_development_dependency 'rspec', '~> 3.3.0'
+  s.add_development_dependency 'webmock', '~> 1.22.2'
+  s.add_development_dependency 'rubocop', '~> 0.32.1'
+  s.add_development_dependency 'rake', '~> 10.4.2'
 end
