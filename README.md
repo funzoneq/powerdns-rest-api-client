@@ -1,5 +1,6 @@
 # powerdns-rest-api-client
 A ruby library to interact with the experimental PowerDNS REST API
+[![Build Status](https://travis-ci.org/funzoneq/powerdns-rest-api-client.svg?branch=master)](https://travis-ci.org/funzoneq/powerdns-rest-api-client)
 
 ## Installation
 
